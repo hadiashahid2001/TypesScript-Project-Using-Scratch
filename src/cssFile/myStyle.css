@@ -1,0 +1,147 @@
+body{
+    background-color: rgb(49, 49, 49);
+    color: whitesmoke;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+main{
+    
+    margin: 5px auto;
+    max-width: 700px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    background: linear-gradient(to right, white , rgb(224, 218, 218) , rgb(102, 102, 102));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    position: relative; /* Position the pseudo-element relative to the heading */
+}
+.grad-color{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(253, 251, 251, 0.877), rgba(0, 0, 0, 0.75), rgb(223, 214, 214));
+}
+.newItemEntry{
+    border: 1px solid white;
+    border-radius: 10px;
+    
+    padding: 10px;
+}
+.newItemEntry__form{
+    align-items: center;
+    display: flex;
+}
+.newItemEntry .newItemEntry__input{
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: black;
+    padding-left: 10px;
+    font-size: 1.0875rem;
+    font-weight: 500;
+}
+.newItemEntry__input::placeholder{
+    color: #c9c9c9e1;
+}
+
+.newItemEntry .newItemEntry__button{
+    margin-left: 10px;
+    color: white;
+    width: 45px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px dotted white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+.newItemEntry .newItemEntry__button:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+.listContainer{
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    min-height: 400px;
+}
+.listTitle{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    max-height: 50px;
+}
+
+.listTitle .listTitle_button{
+    background-color: transparent;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    height:fit-content;
+    padding: 5px;
+    font-size: 1.20rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: all 0.7s ease-in-out;
+}
+.listTitle .listTitle_button:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+.listItems{
+    list-style-type: none;
+}
+.item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.item input[type="checkbox"], .item button {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+.item label {
+    margin-left: 10px;
+}
+.item input:checked ~ label{
+    text-decoration: line-through;
+}
+.item button{
+    margin-left: auto;
+}
+.item button:hover{
+    color: darkred;
+}
+ul{ 
+    padding: 0;
+}
+
+.item > label{
+    flex-grow: 1;
+}
+
+@media (min-width : 768px) {
+    section{
+        padding: 1rem;
+    }
+    .newItemEntry__form{
+        gap: 0.5rem;
+    }
+    
+}

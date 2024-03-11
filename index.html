@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My List</title>
+    <link rel="stylesheet" href="src/cssFile/myStyle.css">
+    <script type="module" src="diste/main.js" defer></script>
+  </head>
+  <body>
+            <!--  Whole Page will have light black theme -->
+    <div class="container">
+      <h1 class="offscreen">My Personal Item Management System</h1>
+    </div>
+    <hr class="grad-color">
+    <main>
+      <section class="newItemEntry"> <!-- Section will take white boundary with curved radius -->
+       <!-- <h2 class="offscreen">New Item Entry</h2>No  -->
+        <form action="" class="newItemEntry__form" id="itemEntryForm">
+          <!--<label for="newItem" class="offscreen">Enter a new to do Item</label> No -->
+          <input type="text" class="newItemEntry__input" id="newItem" placeholder="Add item" > <!-- Both label and input should be in one row -->
+          <button id="addItem" class="button newItemEntry__button" aria-label="Add new item to the list">+</button> <!-- with dotted border -->
+        </form>
+      </section>
+      <section class="listContainer"> <!-- Same styling for this section -->
+        <header class="listTitle"> <!-- Both in one row -->
+          <h2 id="listName">List</h2> <!-- Should be bold in white -->
+          <button id="clearItemsButton" class="button listTitle_button">Clear</button> <!-- Border Should be black with border-radius-->
+        
+        </header>
+        <hr> <!-- White -->
+        <ul id="listItems"> <!-- in white color -->
+          <!-- <li class="item">
+            <input type="checkbox" id="1" tabindex="0">
+            <label for="1">eat</label>
+          </li>
+          <li class="item">
+            <input type="checkbox" id="2" tabindex="0">
+            <label for="2">sleep</label>
+          </li>
+          <li class="item">
+            <input type="checkbox" id="3" tabindex="0">
+            <label for="3">code</label>
+          </li> -->
+        </ul>
+
+        </ul>
+      </section>
+    </main>
+
+  </body>
+</html>
